@@ -11,13 +11,15 @@ public class WelcomeController {
     @Autowired
     private WelcomeService welcomeService;
 
+    @RequestMapping("/")
+    public String greeting() {
+        return "Hurray CI CD";
+    }
+
     @RequestMapping("/{name}")
     public String home(@PathVariable("name") String name) {
         return welcomeService.getMessage(name);
     }
 
-    @RequestMapping("/welcome/{name}")
-    public String welcome(@PathVariable("name") String name) {
-        return welcomeService.getMessage(name);
-    }
+
 }
