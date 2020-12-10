@@ -16,7 +16,7 @@ class CiCdDemoApplicationTests {
 	@DisplayName("Test Spring @Autowired Integration")
 	@Test
 	void testGet() {
-		assertEquals("Hello Mx Archana, Welcome to Vapasi!", welcomeService.getMessage("Archana"));
+		assertEquals("Hello Mx Bill Gates, Welcome to Vapasi!", welcomeService.getMessage("Bill Gates"));
 	}
 
 }
