@@ -13,7 +13,7 @@ public class WelcomeController {
 
     @RequestMapping("/")
     public String greeting() {
-        return "Hurray CI CD";
+        return "Hurray Vapasi 2020";
     }
 
     @RequestMapping("/{name}")
